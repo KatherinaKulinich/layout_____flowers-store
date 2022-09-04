@@ -1,3 +1,7 @@
-h1 {
-    
-}
+@use "./variables" as *;
+@use "./mixins" as *;
+
+@import "./normalize";
+@import "./fonts";
+@import "./settings";
+
