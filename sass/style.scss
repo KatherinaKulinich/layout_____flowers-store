@@ -4,4 +4,15 @@
 @import "./normalize";
 @import "./fonts";
 @import "./settings";
+@import "./body";
 
+@import "./blocks/components/button";
+@import "./blocks/components/socials";
+
+@import "./blocks/headers/header-mob";
+@import "./blocks/headers/header-desktop";
+
+@import "./blocks/start-page";
+@import "./blocks/offers";
+@import "./blocks/about-us";
+@import "./blocks/benefits";

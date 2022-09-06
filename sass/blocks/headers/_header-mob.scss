@@ -1,0 +1,28 @@
+@use "../../variables" as *;
+@use "../../mixins" as *;
+
+.header-mob {
+    @include paddingY (8px);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    &__button {
+        border: none;
+        background-color: transparent;
+        @include size (31px, 20px);
+    }
+
+    &__nav {
+        display: none;
+    }
+
+    &__logo {
+       justify-self: center;
+        
+    }
+
+    &__logo-icon {
+        @include size (107px, 43px);
+    }
+}

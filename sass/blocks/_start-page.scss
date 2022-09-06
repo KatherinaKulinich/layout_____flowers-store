@@ -1,0 +1,41 @@
+@use "../variables" as *;
+@use "../mixins" as *;
+
+
+.start-page {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 25px;
+    text-align: center;
+
+    &__bg-image {
+        @include bg-img ('../images/bg_mob-no-background.png');
+        width: 350px;
+        height: 275px;
+    }
+
+    &__information {
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    &__header {
+        @include font ($sans, 600, 24px, 30px);
+        margin-bottom: 0;
+    }
+
+    &__text {
+        @include paragraph-text ();
+        margin-bottom: 0;
+    }
+
+    &__buttons {
+        display: flex;
+        gap: 20px;
+        align-items: center;
+        justify-content: center;
+    }
+
+}

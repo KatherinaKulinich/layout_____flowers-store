@@ -1,0 +1,42 @@
+@use "../variables" as *;
+@use "../mixins" as *;
+
+.about-us {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    &__header {
+        @include font ($sans, 600, 24px, 30px);
+        margin-bottom: 12px;
+    }
+
+    &__text {
+        @include paragraph-text ();
+        margin-bottom: 7px;
+
+        &:last-child {
+            margin-bottom: 30px;
+        }
+    }
+
+    &__picture-background {
+        @include bg-img ('../images/abstract_background.png');
+        @include size (292px, 229px);
+        position: relative;
+    }
+
+    &__image {
+        @include size (292px, 181px);
+        position: absolute;
+        bottom: 0;
+        left: -55px;
+    }
+
+    &__socials {
+        position: absolute;
+        right: 40px;
+        top: 27px;
+    }
+
+}

@@ -1,3 +1,22 @@
 @use "./variables" as *;
 @use "./mixins" as *;
 
+* {
+    box-sizing: border-box;
+}
+
+p,
+h1,
+h2, 
+h3,
+h4 {
+    margin-top: 0;
+}
+
+.wrapper-header-mob {
+    @include marginX (25px);
+}
+
+.wrapper {
+    @include marginX (35px);
+}

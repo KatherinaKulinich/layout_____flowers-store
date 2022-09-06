@@ -6,58 +6,68 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="best bouquets in the city, everyday fresh flowers">
     <meta name="keywords" content="flowers shop, fresh flowers, bouquet">
-    <link rel="stylesheet" href="style.min.css">
+    <link rel="stylesheet" href="./css/style.min.css">
     <title>Project</title>
 </head>
-<body>
+<body class="body">
     <header>
-        <div>
-            <div>
-                <div>
-                    <button>
+        <div class="body__header">
+            <div class="wrapper-header-mob">
+                <div class="header-mob">
+                    <button class="header-mob__button">
                         <img src="./images/burger_menu.svg" alt="menu">
                     </button>
-                    <nav>
-                        <a href="">
+                    <nav class="header-mob__nav">
+                        <a href=""  class="header-mob__nav-item">
                             Каталог
                         </a>
-                        <a href="">
+                        <a href="" class="header-mob__nav-item">
                             Про нас
                         </a>
-                        <a href="">
+                        <a href="" class="header-mob__nav-item">
                             Збери букет
                         </a>
-                        <a href="">
+                        <a href="" class="header-mob__nav-item">
                             Контакти
                         </a>
                     </nav>
-                    <img src="./images/logo.png" alt="logo">
+                    <a href="" class="header-mob__logo">
+                        <img 
+                        class="header-mob__logo-icon"
+                        src="./images/logo.png" 
+                        alt="logo"
+                    >
+                    </a>
                 </div>
             </div>
         </div>
-        <div>
-            <div>
+        <div class="header-desktop">
+            <div class="wrapper-header-desktop">
                 <div>
-                    <img src="./images/logo.png" alt="logo">
-                    <nav>
-                        <a href="">
+                    <img 
+                        class="header-desktop" 
+                        src="./images/logo.png" 
+                        alt="logo"
+                    >
+                    <nav class="header-desktop__nav">
+                        <a class="header-desktop__nav-item" href="">
                             Каталог
                         </a>
-                        <a href="">
+                        <a class="header-desktop__nav-item" href="">
                             Про нас
                         </a>
-                        <a href="">
+                        <a class="header-desktop__nav-item" href="">
                             Збери букет
                         </a>
-                        <a href="">
+                        <a class="header-desktop__nav-item" href="">
                             Контакти
                         </a>
                     </nav>
-                    <div>
-                        <a href="">
+                    <div class="header-desktop__icons">
+                        <a class="header-desktop__lupa" href="">
                             <img src="./images/lupa.png" alt="lupa">
                         </a>
-                        <a href="">
+                        <a class="header-desktop__basket" href="">
                             <img src="./images/basket.png" alt="basket">
                         </a>
                     </div>
@@ -67,24 +77,24 @@
     </header>
     <main>
         <section>
-            <div>
-                <div>
-                    <div></div> <!--bg img flowers-->
-                    <div>
-                        <h1>
+            <div class="wrapper">
+                <div class="start-page">
+                    <div class="start-page__bg-image"></div> <!--bg img flowers-->
+                    <div class="start-page__information">
+                        <h1 class="start-page__header">
                             Букет із кущових троянд
                             “Довгоочікуване щастя”
                         </h1>
-                        <p>
+                        <p class="start-page__text">
                             Ніжний та витончений шик у букеті 
                             з троянд - гарний вибір
                             для коханої людини
                         </p>
-                        <div>
-                            <a href="">
+                        <div class="start-page__buttons">
+                            <a class="button button--fill" href="">
                                 В кошик
                             </a>
-                            <a href="">
+                            <a class="button button--transparent" href="">
                                 В каталог
                             </a>
                         </div>
@@ -93,20 +103,20 @@
             </div>
         </section>
         <section>
-            <div>
-                <div>
-                    <div>
-                        <a href="">
+            <div class="wrapper">
+                <div class="offers">
+                    <div class="offers__card offers__card--bouquets">
+                        <a class="offers__item" href="">
                             Букети
                         </a>
                     </div>
-                    <div>
-                        <a href="">
+                    <div class="offers__card offers__card--fresh">
+                        <a class="offers__item" href="">
                             Живі квіти
                         </a>
                     </div>
-                    <div>
-                        <a href="">
+                    <div class="offers__card offers__card--handmade">
+                        <a class="offers__item" href="">
                             "Свій" букет
                         </a>
                     </div>
@@ -114,64 +124,100 @@
             </div>
         </section>
         <section>
-            <div>
-                <div>
+            <div class="wrapper">
+                <div class="about-us">
                     <div>
-                        <h2>
+                        <h2 class="about-us__header">
                             Про нас
                         </h2>
-                        <p>
+                        <p class="about-us__text">
                             Яких квітів тут лише немає! І садові, і польові, і кімнатні 
                             у глиняних горщиках. Очі розбігаються від такого достатку.
                         </p>
-                        <p>
+                        <p class="about-us__text">
                             Тут представлена і багата колекція кімнатних рослин: кактуси різної форми та величини, 
                             ніжні фіалки, усипані квітами, аспарагуси, фікуси.
                         </p>
                     </div>
-                    <div>
-                        <img src="./images/women.png" alt="women">
-                        <div>
+                    <div class="about-us__picture-background">
+                        <img  
+                            class="about-us__image" 
+                            src="./images/women.png" 
+                            alt="women"
+                        >
+                        <div class="about-us__socials socials socials--column">
                             <a href="">
-                                <img src="./images/inst.png" alt="icon-inst">
+                                <img 
+                                    class="socials__item" 
+                                    src="./images/inst.png" 
+                                    alt="icon-inst"
+                                >
                             </a>
                             <a href="">
-                                <img src="./images/fb.png" alt="icon-fb">
+                                <img 
+                                    class="socials__item" 
+                                    src="./images/fb.png" 
+                                    alt="icon-fb"
+                                >
                             </a>
                             <a href="">
-                                <img src="./images/viber.png" alt="icon-viber">
+                                <img 
+                                    class="socials__item" 
+                                    src="./images/viber.png" 
+                                    alt="icon-viber"
+                                >
                             </a>
                         </div>
-                        <div>
-                            <h2>
-                                Працюємо для вас
-                            </h2>
-                            <div>
-                                <div>
-                                    <img src="./images/constructor.png" alt="picture">
-                                    <p>
-                                        Конструктрор унікального букета
-                                    </p>
-                                </div>
-                                <div>
-                                    <img src="./images/indoor.png" alt="picture">
-                                    <p>
-                                        Безкоштовна доставка по місту до 2-х годин
-                                    </p>
-                                </div>
-                                <div>
-                                    <img src="./images/delivery.png" alt="picture">
-                                    <p>
-                                        Наявність кімнатних рослин
-                                    </p>
-                                </div>
-                                <div>
-                                    <img src="./images/for_loved_ones.png" alt="picture">
-                                    <p>
-                                        Вибір квітів для коханих, мам та друзів
-                                    </p>
-                                </div>
-                            </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="body__benefits">
+            <div class="wrapper">
+                <div class="benefits">
+                    <h2 class="benefits__header">
+                        Працюємо для вас
+                    </h2>
+                    <div class="benefits__list">
+                        <div class="benefits__card">
+                            <img 
+                                class="benefits__card-image" 
+                                src="./images/constructor.png" 
+                                alt="picture"
+                            >
+                            <p class="benefits__card-text">
+                                Конструктрор унікального букета
+                            </p>
+                        </div>
+                        <div class="benefits__card">
+                            <img 
+                                class="benefits__card-image" 
+                                src="./images/indoor.png" 
+                                alt="picture"
+                            >
+                            <p class="benefits__card-text">
+                                Безкоштовна доставка по місту до 2-х годин
+                            </p>
+                        </div>
+                        <div class="benefits__card">
+                            <img 
+                                class="benefits__card-image" 
+                                src="./images/delivery.png" 
+                                alt="picture"
+                            >
+                            <p class="benefits__card-text">
+                                Наявність кімнатних рослин
+                            </p>
+                        </div>
+                        <div class="benefits__card">
+                            <img 
+                                class="benefits__card-image" 
+                                src="./images/for_loved_ones.png" 
+                                alt="picture"
+                            >
+                            <p class="benefits__card-text">
+                                Вибір квітів для коханих, мам та друзів
+                            </p>
                         </div>
                     </div>
                 </div>
@@ -282,7 +328,12 @@
                         </h2>
                         <div>
                             <div>
-                                <img src="./images/reviews-photo2.png" alt="user-photo">
+                                <img 
+                                    src="./images/reviews-photo2.png" 
+                                    alt="user-photo" 
+                                    width="100" 
+                                    height="100"
+                                >
                                 <div>
                                     <p>
                                         “Сам не фахівець з квітів, але дружині дуже сподобався оригінальний весняний букет, 
@@ -295,7 +346,12 @@
                                 </div>
                             </div>
                             <div>
-                                <img src="./images/reviews-photo1.png" alt="user-photo">
+                                <img 
+                                    src="./images/reviews-photo1.png" 
+                                    alt="user-photo" 
+                                    width="100" 
+                                    height="100"
+                                >
                                 <div>
                                     <p>
                                         “Замовляла квіти у неробочий час (увечері), але зі мною дуже оперативно зв'язався співробітник 

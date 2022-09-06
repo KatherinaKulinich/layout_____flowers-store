@@ -1,0 +1,13 @@
+@use "./variables" as *;
+@use "./mixins" as *;
+
+.body {
+
+    &__header {
+        background-color: $regular-background;
+    }
+
+    &__benefits {
+        background-color: rgba(169, 191, 228, 0.3);
+    }
+}

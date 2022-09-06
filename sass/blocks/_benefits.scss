@@ -1,0 +1,38 @@
+@use "../variables" as *;
+@use "../mixins" as *;
+
+.benefits {
+    @include paddingY (25px);
+
+    &__header {
+        @include font ($sans, 400, 16px, 20px, #989EC3);
+        margin-bottom: 20px;
+    }
+
+    &__list {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 12px;
+    }
+
+    &__card {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: calc(50% - 6px);
+        gap: 10px;
+        text-align: center
+    }
+
+
+    &__card-image {
+        @include
+        size (70px);
+    }
+
+    &__card-text {
+        width: 150px;
+        margin-bottom: 0;
+        @include font ($sans, 400, 11px, 14px);
+    }
+}
