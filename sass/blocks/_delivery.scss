@@ -1,0 +1,46 @@
+@use "../variables" as *;
+@use "../mixins" as *;
+
+.delivery{
+    @include paddingY (30px);
+
+
+    &__header {
+        @include font ($lora, 400, 24px, 31px);
+        margin-bottom: 30px;
+    }
+
+    &__list {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 30px;
+        flex-wrap: wrap;
+    }
+
+    &__item {
+        width: calc(50% - 15px);
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+        text-align: center;
+        align-items: center;
+    }
+
+    &__step {
+        @include font ($lora, 400, 40px, 51px, #A9BFE4);
+        margin-bottom: 0;
+        @include size (65px);
+        border-radius: 50%;
+        box-shadow: 0 4px 8px 0 #FFC2C7;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    &__text {
+        @include font ($sans, 400, 12px, 15px);
+        margin-bottom: 0;
+        max-width: 150px;
+    }
+}

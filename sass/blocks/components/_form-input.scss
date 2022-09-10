@@ -1,0 +1,26 @@
+@use "../../variables" as *;
+@use "../../mixins" as *;
+
+.form-input {
+    border-radius: 10px;
+    border: none;
+    background-color: #FFFFFF;
+    padding: 12px;
+
+    &::placeholder {
+        @include font ($sans, 400, 12px, 15px, #ACACAC);
+    }
+
+    &--large {
+        height: 94px;
+        resize: none;
+    }
+
+    &--small {
+        border-radius: 50px;
+        padding: 6px 6px 6px 10px;
+        height: 30px;
+    }
+  
+}
+

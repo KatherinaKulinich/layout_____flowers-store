@@ -1,0 +1,30 @@
+@use "../../variables" as *;
+@use "../../mixins" as *;
+
+.slider {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    justify-content: center;
+    vertical-align: middle;
+
+    &__arrow {
+        border: none;
+        background-color: transparent;
+        padding: 0;
+        @include size (36px, 16px);
+    }
+
+    &__button {
+        width: 8px;
+        height: 8px;
+        background-color: #D9D9D9;
+        border-radius: 50%;
+        border: none;
+        padding: 0;
+
+        &--active {
+            background-color: $secondary-color;
+        }
+    }
+}

@@ -1,0 +1,32 @@
+@use "../../variables" as *;
+@use "../../mixins" as *;
+
+.card-catalog {
+    padding-bottom: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+    text-align: center;
+    box-shadow: 0 4px 8px 0 #FFC2C7;
+
+    &__img {
+        height: 160px;
+        width: 100%;
+        margin-bottom: 0;
+    }
+
+    &__name {
+        @include font ($sans, 400, 13px, 16px);
+        margin-bottom: 0;
+    }
+
+    &__price {
+        @include font ($sans, 400, 13px, 16px);
+        margin-bottom: 0;
+    }
+
+    &:hover {
+        box-shadow: 0 4px 8px 0 #ACACAC;
+    }
+}

@@ -1,0 +1,66 @@
+@use "../../variables" as *;
+@use "../../mixins" as *;
+
+.footer {
+    @include paddingY (15px);
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+
+    &__info {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: flex-start;
+        justify-content: space-between;
+        gap: 30px;
+    }
+
+    &__logo {
+        align-self: center;
+    }
+
+    &__column {
+        width: calc(33.33% - 20px);
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    &__subheader {
+        @include font ($lora, 400, 12px, 15px, #FFFFFF);
+        margin-bottom: 5px;
+    }
+
+    &__text {
+        @include font ($sans, 300, 11px, 14px, #FFFFFF);
+        margin-bottom: 0;
+        text-decoration: none;
+    }
+
+    &__follow {
+        position: relative;
+        display: flex;
+        justify-content: center;
+    }
+
+    &__input {
+        
+    }
+
+    &__button {
+        position: absolute;
+        right: 15px;
+        top: 0;
+        box-shadow: none;
+    }
+
+    &__copyright {
+        @include font ($sans, 600, 11px, 14px, #FFFFFF);
+    }
+
+    &__socials {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+}

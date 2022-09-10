@@ -224,252 +224,286 @@
             </div>
         </section>
         <section>
-            <div>
-                <div>
-                    <h2>
+            <div class="wrapper">
+                <div class="catalog">
+                    <h2 class="catalog__header">
                         Каталог
                     </h2>
-                    <div>
-                        <div>
-                            <img src="./images/bouquet_cart1.png" alt="bouquet">
-                            <p>
-                                Ніжна свіжість: троянди та лілії
+                    <div class="catalog__list">
+                        <div class="catalog__item card-catalog">
+                            <img 
+                                class="card-catalog__img" 
+                                src="./images/bouquet_cart1.png" 
+                                alt="bouquet"
+                            >
+                            <p class="card-catalog__name">
+                                Ніжна свіжість: <br> троянди та лілії
                             </p>
-                            <p>
+                            <p class="card-catalog__price">
                                 445 грн
                             </p>
-                            <a href="">
+                            <a class="button button--transparent" href="">
                                 В кошик
                             </a>
                         </div>
-                        <div>
-                            <img src="./images/bouquet_cart2.png" alt="bouquet">
-                            <p>
-                                Сорбет: хризантеми та троянди
+                        <div class="catalog__item card-catalog">
+                            <img 
+                                class="card-catalog__img" 
+                                src="./images/bouquet_cart2.png" 
+                                alt="bouquet"
+                            >
+                            <p class="card-catalog__name">
+                                Сорбет: <br> хризантеми та троянди
                             </p>
-                            <p>
+                            <p class="card-catalog__price">
                                 450 грн
                             </p>
-                            <a href="">
+                            <a class="button button--transparent" href="">
                                 В кошик
                             </a>
                         </div>
-                        <div>
-                            <img src="./images/bouquet_cart3.png" alt="bouquet">
-                            <p>
-                                Yellow Song: соняшники та солідаго
+                        <div class="catalog__item card-catalog">
+                            <img 
+                                class="card-catalog__img" 
+                                src="./images/bouquet_cart3.png" 
+                                alt="bouquet"
+                            >
+                            <p class="card-catalog__name">
+                                Yellow Song: <br> соняшники та солідаго
                             </p>
-                            <p>
+                            <p class="card-catalog__price">
                                 455 грн
                             </p>
-                            <a href="">
+                            <a class="button button--transparent" href="">
                                 В кошик
                             </a>
                         </div>
-                        <div>
-                            <img src="./images/bouquet_cart4.png" alt="bouquet">
-                            <p>
-                                Персиковий нектар: лілії та троянди
+                        <div class="catalog__item card-catalog">
+                            <img 
+                                class="card-catalog__img"  
+                                src="./images/bouquet_cart4.png" 
+                                alt="bouquet"
+                            >
+                            <p class="card-catalog__name">
+                                Персиковий нектар: <br> лілії та троянди
                             </p>
-                            <p>
+                            <p class="card-catalog__price">
                                 455 грн
                             </p>
-                            <a href="">
+                            <a class="button button--transparent" href="">
                                 В кошик
                             </a>
                         </div>
-                        <div>
-                            <img src="./images/bouquet_cart5.png" alt="bouquet">
-                            <p>
-                                Аврора: лілії та троянди
+                        <div class="catalog__item card-catalog">
+                            <img 
+                                class="card-catalog__img"  
+                                src="./images/bouquet_cart5.png" 
+                                alt="bouquet"
+                            >
+                            <p class="card-catalog__name">
+                                Аврора: <br> лілії та троянди
                             </p>
-                            <p>
+                            <p class="card-catalog__price">
                                 460 грн
                             </p>
-                            <a href="">
+                            <a class="button button--transparent" href="">
                                 В кошик
                             </a>
                         </div>
-                        <div>
-                            <img src="./images/bouquet_cart6.png" alt="bouquet">
-                            <p>
-                                Класика кохання:червоних троянд
+                        <div class="catalog__item card-catalog">
+                            <img 
+                                class="card-catalog__img"  
+                                src="./images/bouquet_cart6.png" 
+                                alt="bouquet"
+                            >
+                            <p class="card-catalog__name">
+                                Класика кохання: <br> червоних троянд
                             </p>
-                            <p>
+                            <p class="card-catalog__price">
                                 465 грн
                             </p>
-                            <a href="">
+                            <a class="button button--transparent" href="">
                                 В кошик
                             </a>
                         </div>
                     </div>
-                    <div>
-                        <button type="button">
+                    <div class="slider">
+                        <button class="slider__arrow" type="button">
                             <img src="./images/arrow-prew.png" alt="arrow">
                         </button>
-                        <button type="button"></button>
-                        <button type="button"></button>
-                        <button type="button"></button>
-                        <button type="button"></button>
-                        <button type="button"></button>
-                        <button type="button">
+                        <button class="slider__button slider__button--active" type="button"></button>
+                        <button class="slider__button" type="button"></button>
+                        <button class="slider__button" type="button"></button>
+                        <button class="slider__button" type="button"></button>
+                        <button class="slider__button" type="button"></button>
+                        <button class="slider__arrow" type="button">
                             <img src="./images/arrow-next.png" alt="arrow">
                         </button>
                     </div>
                 </div>
             </div>
         </section>
-        <section>
-            <div>
+        <section class="body__feedback">
+            <div class="wrapper">
                 <div>
-                    <div>
-                        <h2>
+                    <div class="rewiews">
+                        <h2 class="rewiews__header">
                             Відгуки
                         </h2>
-                        <div>
-                            <div>
+                        <div class="rewiews__cards">
+                            <div class="rewiews__item">
                                 <img 
                                     src="./images/reviews-photo2.png" 
                                     alt="user-photo" 
                                     width="100" 
                                     height="100"
+                                    class="rewiews__img"
                                 >
-                                <div>
-                                    <p>
+                                <div class="rewiews__info">
+                                    <p class="rewiews__text">
                                         “Сам не фахівець з квітів, але дружині дуже сподобався оригінальний весняний букет, 
                                         зібраний із позитивним настроєм. Залишаю свій позитивний відгук магазину на вул. 
                                         Добровольчих батальонів.”
                                     </p>
-                                    <p>
+                                    <p class="rewiews__user">
                                         Володимир <time datetime="2022-06-19">19.06.22</time> 
                                     </p>
                                 </div>
                             </div>
-                            <div>
+                            <div class="rewiews__item">
                                 <img 
                                     src="./images/reviews-photo1.png" 
                                     alt="user-photo" 
                                     width="100" 
                                     height="100"
+                                    class="rewiews__img"
                                 >
-                                <div>
-                                    <p>
+                                <div class="rewiews__info">
+                                    <p class="rewiews__text">
                                         “Замовляла квіти у неробочий час (увечері), але зі мною дуже оперативно зв'язався співробітник 
                                         та пообіцяв доставити букет вранці у призначений час. Так і сталося, квіти були доставлені 
                                         з точністю секунда в секунду, свіжі та красиві. Рекомендую.”
                                     </p>
-                                    <p>
+                                    <p class="rewiews__user">
                                         Людмила  <time datetime="2022-04-03">03.04.22 </time> 
                                     </p>
                                 </div>
                             </div>
                         </div>
-                        <div>
-                            <button type="button">
+                        <div class="slider">
+                            <button class="slider__arrow" type="button">
                                 <img src="./images/arrow-prew.png" alt="arrow">
                             </button>
-                            <button type="button"></button>
-                            <button type="button"></button>
-                            <button type="button"></button>
-                            <button type="button"></button>
-                            <button type="button"></button>
-                            <button type="button">
+                            <button class="slider__button slider__button--active" type="button"></button>
+                            <button class="slider__button" type="button"></button>
+                            <button class="slider__button" type="button"></button>
+                            <button class="slider__button" type="button"></button>
+                            <button class="slider__button" type="button"></button>
+                            <button class="slider__arrow" type="button">
                                 <img src="./images/arrow-next.png" alt="arrow">
                             </button>
                         </div>
                     </div>
-                    <div>
-                        <form action="#" method="get" name="user-review">
-                            <fieldset>
-                                <legend>
+                    <div class="feedback">
+                        <form 
+                            action="#" 
+                            method="get" 
+                            name="user-review"
+                            class="feedback__form"
+                        >
+                            <fieldset class="feedback__section">
+                                <legend class="feedback__header">
                                     Додати відгук:
                                 </legend>
-                                <input 
-                                    type="text" 
-                                    placeholder="Ваше ім’я" 
-                                    name="user-name"
-                                >
-                                <textarea 
-                                    name="user-feedback"  
-                                    cols="30" 
-                                    rows="10" 
-                                    placeholder="Ваш відгук:"
-                                ></textarea>
+                                <div class="feedback__inputs">
+                                    <input 
+                                        type="text" 
+                                        placeholder="Ваше ім’я" 
+                                        name="user-name"
+                                        class="form-input"
+                                    >
+                                    <textarea 
+                                        name="user-feedback"  
+                                        cols="30" 
+                                        rows="10" 
+                                        placeholder="Ваш відгук:"
+                                        class="form-input form-input--large"
+                                    ></textarea>
+                                </div>
                             </fieldset>
-                            <button type="submit">
+                            <button 
+                            type="submit" 
+                            class="feedback__button button button--fill"
+                            >
                                 Відправити
                             </button>
                         </form>
                     </div>
                 </div>
-                <img src="./images/flowers-1.png" alt="flowers">
-                <img src="./images/flowers-2.png" alt="flowers">
+                <img 
+                    src="./images/flowers-1.png" 
+                    alt="flowers"
+                    class="body__flowers"
+                >
+                <img 
+                    src="./images/flowers-2.png" 
+                    alt="flowers"
+                    class="body__flowers"
+                >
             </div>
         </section>
         <section>
-            <div>
-                <div>
-                    <h2>
+            <div class="wrapper">
+                <div class="delivery">
+                    <h2 class="delivery__header">
                         Доставка і оплата
                     </h2>
-                    <div>
-                        <div>
-                            <div>
-                                <p>
-                                    1
-                                </p>
-                            </div>
-                            <p>
+                    <div class="delivery__list">
+                        <div class="delivery__item">
+                            <p class="delivery__step">
+                                1
+                            </p>
+                            <p class="delivery__text">
                                 Ви замовляєте букет через каталог
                             </p>
                         </div>
-                        <div>
-                            <div>
-                                <p>
-                                    2
-                                </p>
-                            </div>
-                            <p>
+                        <div class="delivery__item">
+                            <p class="delivery__step">
+                                2
+                            </p>
+                            <p class="delivery__text">
                                 Ви оплачуєте товар через картку VISA або MC, або Приват24
                             </p>
                         </div>
-                        <div>
-                            <div>
-                                <p>
-                                    3
-                                </p>
-                            </div>
-                            <p>
+                        <div class="delivery__item">
+                            <p class="delivery__step">
+                                3
+                            </p>
+                            <p class="delivery__text">
                                 Вам передзвонять наші менеджери, якщо потрібно щось уточнити
                             </p>
                         </div>
-                        <div>
-                            <div>
-                                <p>
-                                    4
-                                </p>
-                            </div>
-                            <p>
+                        <div class="delivery__item">
+                            <p class="delivery__step">
+                                4
+                            </p>
+                            <p class="delivery__text">
                                 Надсилаємо фото зібраного букета, щоб узгодити все
                             </p>
                         </div>
-                        <div>
-                            <div>
-                                <p>
-                                    5
-                                </p>
-                            </div>
-                            <p>
+                        <div class="delivery__item">
+                            <p class="delivery__step">
+                                5
+                            </p>
+                            <p class="delivery__text">
                                 Доставляємо букет одержувачу протягом 2-х годин
                             </p>
                         </div>
-                        <div>
-                            <div>
-                                <p>
-                                    6
-                                </p>
-                            </div>
-                            <p>
+                        <div class="delivery__item">
+                            <p class="delivery__step">
+                                6
+                            </p>
+                            <p class="delivery__text">
                                 Сповістимо Вас дзвінком або повідомленням про доставку букета
                             </p>
                         </div>
@@ -478,89 +512,124 @@
             </div>
         </section>
     </main>
-    <footer>
-        <div>
-            <div>
-                <img src="./images/logo.png" alt="logo">
-                <div>
-                    <div>
-                        <div>
-                            <h3>
-                                Контакти
-                            </h3>
-                            <a href="tel:+(095)0000000">
-                                (095) 000 00 00
-                            </a>
-                            <a href="tel:+(097)0000000">
-                                (097) 000 00 00
-                            </a>
-                            <p>
-                                Ми працюємо цілодобово
-                            </p>
-                        </div>
-                        <div>
-                            <h3>
-                                Інформація
-                            </h3>
-                            <a href="">
-                                Про нас
-                            </a>
-                            <a href="">
-                                Хіт продажу
-                            </a>
-                            <a href="">
-                                Відгуки
-                            </a>
-                            <a href="">
-                                Про нас Хіт продажу Відгуки Доставка і оплата
-                            </a>
-                        </div>
-                        <div>
-                            <h3>
-                                Каталог
-                            </h3>
-                            <a href="">
-                                Збери свій букет 
-                            </a>
-                            <a href="">
-                                Живі квіти
-                            </a>
-                            <a href="">
-                                Кімнатні рослини
-                            </a>
-                        </div>
-                    </div>
-                    <div>
-                        <form 
-                            action="#" 
-                            method="post" 
-                            name="user-follow"
+    <footer class="body__footer">
+        <div class="wrapper">
+            <div class="footer">
+                <img 
+                    src="./images/logo.png" 
+                    alt="logo" 
+                    width="107" 
+                    height="43"
+                    class="footer__logo"
+                >
+                <div class="footer__info">
+                    <div class="footer__column">
+                        <h3 class="footer__subheader">
+                            Контакти
+                        </h3>
+                        <a 
+                            class="footer__text"
+                            href="tel:+(095)0000000"
                         >
-                            <div>
-                                <input type="email" name="user-email">
-                                <button type="button">
-                                    Підписатися
-                                </button>
-                            </div>
-                        </form>
-                        <div>
-                            <a href="">
-                                <img src="./images/inst.png" alt="icon-inst">
-                            </a>
-                            <a href="">
-                                <img src="./images/fb.png" alt="icon-fb">
-                            </a>
-                            <a href="">
-                                <img src="./images/viber.png" alt="icon-viber">
-                            </a>
-                        </div>
+                            (095) 000 00 00
+                        </a>
+                        <a 
+                            class="footer__text" 
+                            href="tel:+(097)0000000"
+                        >
+                            (097) 000 00 00
+                        </a>
+                        <p class="footer__text">
+                            Ми працюємо цілодобово
+                        </p>
                     </div>
-                    <p>
+                    <div class="footer__column">
+                        <h3 class="footer__subheader">
+                            Інформація
+                        </h3>
+                        <a href="" class="footer__text">
+                            Про нас
+                        </a>
+                        <a href="" class="footer__text">
+                            Хіт продажу
+                        </a>
+                        <a href="" class="footer__text">
+                            Відгуки
+                        </a>
+                        <a href="" class="footer__text">
+                            Доставка і оплата
+                        </a>
+                    </div>
+                    <div class="footer__column">
+                        <h3 class="footer__subheader">
+                            Каталог
+                        </h3>
+                        <a href="" class="footer__text">
+                            Збери свій букет 
+                        </a>
+                        <a href="" class="footer__text">
+                            Живі квіти
+                        </a>
+                        <a href="" class="footer__text">
+                            Кімнатні рослини
+                        </a>
+                    </div>
+                </div>
+                <form 
+                    action="#" 
+                    method="post" 
+                    name="user-follow"
+                    class="footer__form"
+                >
+                    <div class="footer__follow">
+                        <input 
+                            type="email" 
+                            name="user-email"
+                            placeholder="Введіть свій e-mail"
+                            class="footer__input form-input form-input--small"
+                        >
+                        <button 
+                            type="button" 
+                            class="footer__button button button--fill"
+                        >
+                            Підписатися
+                        </button>
+                    </div>
+                </form>
+                <div class="footer__socials">
+                    <div class="socials socials--row">
+                        <a href="#">
+                            <img 
+                                class="socials__item" 
+                                src="./images/inst.png" 
+                                alt="icon-inst"
+                            >
+                        </a>
+                        <a href="#">
+                            <img 
+                                class="socials__item" 
+                                src="./images/fb.png" 
+                                alt="icon-fb"
+                            >
+                        </a>
+                        <a href="#">
+                            <img 
+                                class="socials__item" 
+                                src="./images/viber.png" 
+                                alt="icon-viber"
+                            >
+                        </a>
+                    </div>
+                    <p class="footer__copyright">
                         Copyright Ⓒ  <time datetime="2022">2022</time>
                     </p>
                 </div>
             </div>
-            <img src="./images/flowers-3.png" alt="flowers">
+            <img 
+                src="./images/flowers-3.png" 
+                alt="flowers" 
+                class="body__flowers"
+            >
         </div>
     </footer>
 </body>

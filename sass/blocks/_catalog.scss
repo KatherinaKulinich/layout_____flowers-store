@@ -1,0 +1,25 @@
+@use "../variables" as *;
+@use "../mixins" as *;
+
+.catalog {
+    @include paddingYY (32px, 40px);
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
+    &__header {
+        @include font ($sans, 600, 24px, 30px);
+    }
+
+    &__list {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: center;
+        gap: 20px;
+    }
+
+    &__item {
+        max-width: calc(50% - 10px);
+    }
+}

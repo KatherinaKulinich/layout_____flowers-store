@@ -11,6 +11,7 @@
     @include paddingY (7px);
     border-radius: 50px;
     text-decoration: none;
+    border: none;
 
     &--fill {
         background-color: $secondary-color;

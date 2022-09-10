@@ -8,11 +8,21 @@
 
 @import "./blocks/components/button";
 @import "./blocks/components/socials";
+@import "./blocks/components/slider";
+@import "./blocks/components/form-input";
 
 @import "./blocks/headers/header-mob";
 @import "./blocks/headers/header-desktop";
+
+@import "./blocks/cards/card-catalog";
 
 @import "./blocks/start-page";
 @import "./blocks/offers";
 @import "./blocks/about-us";
 @import "./blocks/benefits";
+@import "./blocks/catalog";
+@import "./blocks/rewiews";
+@import "./blocks/feedback";
+@import "./blocks/delivery";
+
+@import "./blocks/footer/footer";
