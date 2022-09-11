@@ -14,23 +14,25 @@
         <div class="body__header">
             <div class="wrapper-header-mob">
                 <div class="header-mob">
-                    <button class="header-mob__button">
-                        <img src="./images/burger_menu.svg" alt="menu">
-                    </button>
-                    <nav class="header-mob__nav">
-                        <a href=""  class="header-mob__nav-item">
-                            Каталог
-                        </a>
-                        <a href="" class="header-mob__nav-item">
-                            Про нас
-                        </a>
-                        <a href="" class="header-mob__nav-item">
-                            Збери букет
-                        </a>
-                        <a href="" class="header-mob__nav-item">
-                            Контакти
-                        </a>
-                    </nav>
+                    <div class="header-mob__dropdown">
+                        <button class="header-mob__button">
+                            <img src="./images/burger_menu.svg" alt="menu">
+                        </button>
+                        <nav class="header-mob__nav">
+                            <a href=""  class="header-mob__nav-item">
+                                Каталог
+                            </a>
+                            <a href="" class="header-mob__nav-item">
+                                Про нас
+                            </a>
+                            <a href="" class="header-mob__nav-item">
+                                Збери букет
+                            </a>
+                            <a href="" class="header-mob__nav-item">
+                                Контакти
+                            </a>
+                        </nav>
+                    </div>
                     <a href="" class="header-mob__logo">
                         <img 
                         class="header-mob__logo-icon"
@@ -38,17 +40,26 @@
                         alt="logo"
                     >
                     </a>
+                    <div class="header-mob__icons">
+                        <a class="header-mob__lupa" href="">
+                            <img src="./images/lupa.png" alt="lupa">
+                        </a>
+                        <a class="header-mob__basket" href="">
+                            <img src="./images/basket.png" alt="basket">
+                        </a>
+                    </div>
                 </div>
             </div>
         </div>
-        <div class="header-desktop">
+        <div class="body__header">
             <div class="wrapper-header-desktop">
-                <div>
-                    <img 
-                        class="header-desktop" 
-                        src="./images/logo.png" 
-                        alt="logo"
-                    >
+                <div class="header-desktop">
+                    <div class="header-desktop__logo" >
+                        <img 
+                            src="./images/logo.png" 
+                            alt="logo"
+                        >
+                     </div>
                     <nav class="header-desktop__nav">
                         <a class="header-desktop__nav-item" href="">
                             Каталог
@@ -77,7 +88,7 @@
     </header>
     <main>
         <section>
-            <div class="wrapper">
+            <div class="wrapper-start-page">
                 <div class="start-page">
                     <div class="start-page__bg-image"></div> <!--bg img flowers-->
                     <div class="start-page__information">
@@ -139,39 +150,39 @@
                             ніжні фіалки, усипані квітами, аспарагуси, фікуси.
                         </p>
                     </div>
-                    <div class="about-us__picture-background">
-                        <img  
-                            class="about-us__image" 
-                            src="./images/women.png" 
-                            alt="women"
-                        >
-                        <div class="about-us__socials socials socials--column">
-                            <a href="">
-                                <img 
-                                    class="socials__item" 
-                                    src="./images/inst.png" 
-                                    alt="icon-inst"
-                                >
-                            </a>
-                            <a href="">
-                                <img 
-                                    class="socials__item" 
-                                    src="./images/fb.png" 
-                                    alt="icon-fb"
-                                >
-                            </a>
-                            <a href="">
-                                <img 
-                                    class="socials__item" 
-                                    src="./images/viber.png" 
-                                    alt="icon-viber"
-                                >
-                            </a>
-                        </div>
-                    </div>
                 </div>
             </div>
         </section>
+        <div class="about-us__picture-background">
+            <img  
+                class="about-us__image" 
+                src="./images/women.png" 
+                alt="women"
+            >
+            <div class="about-us__socials socials socials--column">
+                <a href="">
+                    <img 
+                        class="socials__item" 
+                        src="./images/inst.png" 
+                        alt="icon-inst"
+                    >
+                </a>
+                <a href="">
+                    <img 
+                        class="socials__item" 
+                        src="./images/fb.png" 
+                        alt="icon-fb"
+                    >
+                </a>
+                <a href="">
+                    <img 
+                        class="socials__item" 
+                        src="./images/viber.png" 
+                        alt="icon-viber"
+                    >
+                </a>
+            </div>
+        </div>
         <section class="body__benefits">
             <div class="wrapper">
                 <div class="benefits">
@@ -184,6 +195,8 @@
                                 class="benefits__card-image" 
                                 src="./images/constructor.png" 
                                 alt="picture"
+                                width="65"
+                                height="55"
                             >
                             <p class="benefits__card-text">
                                 Конструктрор унікального букета
@@ -194,6 +207,8 @@
                                 class="benefits__card-image" 
                                 src="./images/indoor.png" 
                                 alt="picture"
+                                width="65"
+                                height="55"
                             >
                             <p class="benefits__card-text">
                                 Безкоштовна доставка по місту до 2-х годин
@@ -204,6 +219,8 @@
                                 class="benefits__card-image" 
                                 src="./images/delivery.png" 
                                 alt="picture"
+                                width="62"
+                                height="63"
                             >
                             <p class="benefits__card-text">
                                 Наявність кімнатних рослин
@@ -214,6 +231,8 @@
                                 class="benefits__card-image" 
                                 src="./images/for_loved_ones.png" 
                                 alt="picture"
+                                width="62"
+                                height="62"
                             >
                             <p class="benefits__card-text">
                                 Вибір квітів для коханих, мам та друзів
@@ -236,15 +255,17 @@
                                 src="./images/bouquet_cart1.png" 
                                 alt="bouquet"
                             >
-                            <p class="card-catalog__name">
-                                Ніжна свіжість: <br> троянди та лілії
-                            </p>
-                            <p class="card-catalog__price">
-                                445 грн
-                            </p>
-                            <a class="button button--transparent" href="">
-                                В кошик
-                            </a>
+                            <div class="card-catalog__information">
+                                <p class="card-catalog__name">
+                                    Ніжна свіжість: <br> троянди та лілії
+                                </p>
+                                <p class="card-catalog__price">
+                                    445 грн
+                                </p>
+                                <a class="button button--transparent" href="">
+                                    В кошик
+                                </a>
+                            </div>
                         </div>
                         <div class="catalog__item card-catalog">
                             <img 
@@ -252,15 +273,17 @@
                                 src="./images/bouquet_cart2.png" 
                                 alt="bouquet"
                             >
-                            <p class="card-catalog__name">
-                                Сорбет: <br> хризантеми та троянди
-                            </p>
-                            <p class="card-catalog__price">
-                                450 грн
-                            </p>
-                            <a class="button button--transparent" href="">
-                                В кошик
-                            </a>
+                            <div class="card-catalog__information">
+                                <p class="card-catalog__name">
+                                    Сорбет: <br> хризантеми та троянди
+                                </p>
+                                <p class="card-catalog__price">
+                                    450 грн
+                                </p>
+                                <a class="button button--transparent" href="">
+                                    В кошик
+                                </a>
+                            </div>
                         </div>
                         <div class="catalog__item card-catalog">
                             <img 
@@ -268,15 +291,17 @@
                                 src="./images/bouquet_cart3.png" 
                                 alt="bouquet"
                             >
-                            <p class="card-catalog__name">
-                                Yellow Song: <br> соняшники та солідаго
-                            </p>
-                            <p class="card-catalog__price">
-                                455 грн
-                            </p>
-                            <a class="button button--transparent" href="">
-                                В кошик
-                            </a>
+                           <div class="card-catalog__information">
+                                <p class="card-catalog__name">
+                                    Yellow Song: <br> соняшники та солідаго
+                                </p>
+                                <p class="card-catalog__price">
+                                    455 грн
+                                </p>
+                                <a class="button button--transparent" href="">
+                                    В кошик
+                                </a>
+                           </div>
                         </div>
                         <div class="catalog__item card-catalog">
                             <img 
@@ -284,15 +309,17 @@
                                 src="./images/bouquet_cart4.png" 
                                 alt="bouquet"
                             >
-                            <p class="card-catalog__name">
-                                Персиковий нектар: <br> лілії та троянди
-                            </p>
-                            <p class="card-catalog__price">
-                                455 грн
-                            </p>
-                            <a class="button button--transparent" href="">
-                                В кошик
-                            </a>
+                            <div class="card-catalog__information">
+                                <p class="card-catalog__name">
+                                    Персиковий нектар: <br> лілії та троянди
+                                </p>
+                                <p class="card-catalog__price">
+                                    455 грн
+                                </p>
+                                <a class="button button--transparent" href="">
+                                    В кошик
+                                </a>
+                            </div>
                         </div>
                         <div class="catalog__item card-catalog">
                             <img 
@@ -300,15 +327,17 @@
                                 src="./images/bouquet_cart5.png" 
                                 alt="bouquet"
                             >
-                            <p class="card-catalog__name">
-                                Аврора: <br> лілії та троянди
-                            </p>
-                            <p class="card-catalog__price">
-                                460 грн
-                            </p>
-                            <a class="button button--transparent" href="">
-                                В кошик
-                            </a>
+                            <div class="card-catalog__information">
+                                <p class="card-catalog__name">
+                                    Персиковий нектар: <br> лілії та троянди
+                                </p>
+                                <p class="card-catalog__price">
+                                    455 грн
+                                </p>
+                                <a class="button button--transparent" href="">
+                                    В кошик
+                                </a>
+                            </div>
                         </div>
                         <div class="catalog__item card-catalog">
                             <img 
@@ -316,15 +345,17 @@
                                 src="./images/bouquet_cart6.png" 
                                 alt="bouquet"
                             >
-                            <p class="card-catalog__name">
-                                Класика кохання: <br> червоних троянд
-                            </p>
-                            <p class="card-catalog__price">
-                                465 грн
-                            </p>
-                            <a class="button button--transparent" href="">
-                                В кошик
-                            </a>
+                            <div class="card-catalog__information">
+                                <p class="card-catalog__name">
+                                    Класика кохання: <br> червоних троянд
+                                </p>
+                                <p class="card-catalog__price">
+                                    465 грн
+                                </p>
+                                <a class="button button--transparent" href="">
+                                    В кошик
+                                </a>
+                            </div>
                         </div>
                     </div>
                     <div class="slider">

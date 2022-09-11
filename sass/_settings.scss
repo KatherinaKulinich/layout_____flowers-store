@@ -17,6 +17,18 @@ h4 {
     @include marginX (25px);
 }
 
-.wrapper {
+.wrapper,
+.wrapper-start-page {
     @include marginX (35px);
+}
+
+.wrapper-header-desktop {
+    @include marginX (65px);
+}
+
+@media (min-width: 800px) {
+    .wrapper-start-page {
+        margin-left: 65px;
+        margin-right: 0;
+    }
 }

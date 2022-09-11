@@ -26,5 +26,9 @@
         &--active {
             background-color: $secondary-color;
         }
+
+        &:not(.slider__button--active):hover {
+            background-color: #ACACAC;
+        }
     }
 }

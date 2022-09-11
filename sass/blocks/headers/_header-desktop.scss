@@ -4,3 +4,58 @@
 .header-desktop {
     display: none;
 }
+
+@media (min-width: 800px) {
+    .header-desktop {
+        padding-top: 10px;
+        padding-bottom: 10px;
+        display: flex;
+        justify-content: space-between;
+        gap: 60px;
+        align-items: center;
+        
+
+        &__logo img {
+            @include size (137px, 55px);
+        }
+
+        &__nav {
+            display: flex;
+            gap: 20px;
+        }
+
+        &__nav-item {
+            @include font ($lora, 600, 14px, 19px, #FFFFFF);
+            text-decoration: none;
+            padding-bottom: 3px;
+            border-bottom: 2px solid transparent;
+
+            &:hover {
+                font-weight: 700;
+                border-color: #FFFFFF;
+            }
+        }
+
+        &__icons {
+            display: flex;
+            gap: 10px;
+        }
+    
+        &__lupa, 
+        &__basket {
+            padding: 5px;
+    
+            &:hover {
+                background-color: rgba(255, 255, 255, 0.3);
+                border-radius: 5px;
+            }
+        }
+    
+        &__lupa img,
+        &__basket img {
+            @include size (20px);
+        }
+
+        
+    }
+}

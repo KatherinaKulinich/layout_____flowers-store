@@ -11,6 +11,10 @@
         @include font ($sans, 400, 12px, 15px, #ACACAC);
     }
 
+    &:focus {
+        outline: 2px solid $secondary-color;
+    }
+
     &--large {
         height: 94px;
         resize: none;

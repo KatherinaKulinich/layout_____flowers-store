@@ -52,6 +52,10 @@
         right: 15px;
         top: 0;
         box-shadow: none;
+
+        &:hover {
+            background-color: #ACACAC;
+        }
     }
 
     &__copyright {

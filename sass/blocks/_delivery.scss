@@ -6,7 +6,7 @@
 
 
     &__header {
-        @include font ($lora, 400, 24px, 31px);
+        @include header-text;
         margin-bottom: 30px;
     }
 

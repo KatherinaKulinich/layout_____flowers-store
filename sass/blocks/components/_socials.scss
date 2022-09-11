@@ -17,6 +17,12 @@
 
     &__item {
         @include size (25px);
+        border: 2px solid transparent;
+        border-radius: 3px;
+
+        &:hover {
+            border-color: $secondary-color;
+        }
     }
 
 }

@@ -21,18 +21,21 @@
         align-items: center;
         width: calc(50% - 6px);
         gap: 10px;
-        text-align: center
-    }
-
-
-    &__card-image {
-        @include
-        size (70px);
+        text-align: center;
     }
 
     &__card-text {
         width: 150px;
         margin-bottom: 0;
         @include font ($sans, 400, 11px, 14px);
+    }
+}
+
+@media (min-width: 800px) {
+    .benefits {
+
+        &__card {
+            width: calc(25% - 12px);
+        }
     }
 }

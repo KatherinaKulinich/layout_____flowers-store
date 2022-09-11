@@ -8,18 +8,34 @@
     gap: 20px;
 
     &__header {
-        @include font ($sans, 600, 24px, 30px);
+        @include header-text;
     }
 
     &__list {
         display: flex;
         flex-wrap: wrap;
-        justify-content: space-between;
+        justify-content: center;
         align-items: center;
         gap: 20px;
     }
 
     &__item {
-        max-width: calc(50% - 10px);
+       width: 155px;
+    }
+}
+
+@media (min-width: 400px) {
+    .catalog {
+        &__item {
+            width: 155px;
+        }
+    }
+}
+
+@media (min-width: 800px) {
+    .catalog {
+        &__item {
+            width: 200px;
+        }
     }
 }

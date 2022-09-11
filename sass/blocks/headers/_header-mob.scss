@@ -2,27 +2,89 @@
 @use "../../mixins" as *;
 
 .header-mob {
-    @include paddingY (8px);
+    position: relative;
     display: flex;
     align-items: center;
     justify-content: space-between;
+ 
+
+    &__dropdown:hover  {
+        cursor: pointer;
+        background-color: rgba(255, 255, 255, 0.3);
+    }
+
+    &__dropdown {
+        padding: 15px;
+    }
+
+    &__dropdown:hover .header-mob__nav {
+        display: flex;
+    }
+
+    &__button img {
+        @include size (31px, 20px);
+    }
 
     &__button {
         border: none;
-        background-color: transparent;
-        @include size (31px, 20px);
+        background-color: transparent; 
     }
 
     &__nav {
         display: none;
+        flex-direction: column;
+        position: absolute;
+        text-align: center;
+        top: 100%;
+        left: 0;
+        width: 100%;
+    }
+
+    &__nav-item {
+        @include font ($lora, 600, 14px, 19px, #FFFFFF);
+        text-decoration: none;
+        padding: 7px;
+        width: 100%;
+        background-color: $regular-background;
+        border: 1px solid #FFFFFF;
+
+        &:hover {
+            @include font ($lora, 700, 16px, 19px, #FFFFFF);
+        }
     }
 
     &__logo {
-       justify-self: center;
-        
+        padding: 5px;
     }
 
     &__logo-icon {
         @include size (107px, 43px);
     }
+
+    &__icons {
+        display: flex;
+        gap: 10px;
+    }
+
+    &__lupa, 
+    &__basket {
+        padding: 5px;
+
+        &:hover {
+            background-color: rgba(255, 255, 255, 0.3);
+            border-radius: 5px;
+        }
+    }
+
+    &__lupa img,
+    &__basket img {
+        @include size (20px);
+    }
 }
+
+@media (min-width: 800px) {
+    .header-mob {
+        display: none;
+    }
+}
+
