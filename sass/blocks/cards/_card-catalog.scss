@@ -13,7 +13,6 @@
         text-align: center;
     }
 
-
     &__img {
         height: 160px;
         width: 100%;
@@ -32,5 +31,33 @@
 
     &:hover {
         box-shadow: 0 4px 8px 0 #ACACAC;
+    }
+}
+
+@media (min-width: 800px) {
+    .card-catalog {
+        
+        &__information {
+            gap: 15px;
+            padding: 20px;
+        }
+
+        &__img {
+            height: 210px;
+        }
+    }
+}
+
+@media (min-width: 1024px) {
+    .card-catalog {
+        
+        &__information {
+            gap: 20px;
+            padding: 20px;
+        }
+
+        &__img {
+            height: 230px;
+        }
     }
 }

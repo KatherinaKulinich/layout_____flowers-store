@@ -18,7 +18,8 @@ h4 {
 }
 
 .wrapper,
-.wrapper-start-page {
+.wrapper-start-page,
+.wrapper-about-mob {
     @include marginX (35px);
 }
 
@@ -27,8 +28,29 @@ h4 {
 }
 
 @media (min-width: 800px) {
-    .wrapper-start-page {
+    .wrapper-start-page,
+    .wrapper-about {
         margin-left: 65px;
         margin-right: 0;
     }
+
+    .wrapper {
+        @include marginX (65px);
+    }
+
+    .wrapper-about-mob {
+        @include marginX (0);
+        width: 50%;
+    }
 }
+
+@media (min-width: 1040px) {
+    .wrapper,
+    .wrapper-start-page,
+    .wrapper-header-desktop  {
+        width: 900px;
+        @include margin-auto;
+    }
+
+}
+

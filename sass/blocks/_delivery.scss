@@ -4,7 +4,6 @@
 .delivery{
     @include paddingY (30px);
 
-
     &__header {
         @include header-text;
         margin-bottom: 30px;
@@ -12,10 +11,10 @@
 
     &__list {
         display: flex;
-        justify-content: space-between;
+        justify-content: center;
         align-items: center;
-        gap: 30px;
         flex-wrap: wrap;
+        row-gap: 30px;
     }
 
     &__item {
@@ -42,5 +41,16 @@
         @include font ($sans, 400, 12px, 15px);
         margin-bottom: 0;
         max-width: 150px;
+        min-height: 45px;
+    }
+}
+
+@media (min-width: 800px) {
+    .delivery {
+        @include paddingY (45px);
+
+        &__item {
+            width: calc(33.33% - 10px);
+        }
     }
 }

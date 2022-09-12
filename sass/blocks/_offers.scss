@@ -50,6 +50,7 @@
 
 @media (min-width: 800px) {
     .offers {
+        @include paddingY (30px);
         flex-direction: row;
 
         &__card {
