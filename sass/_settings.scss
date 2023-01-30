@@ -47,7 +47,8 @@ h4 {
 @media (min-width: 1040px) {
     .wrapper,
     .wrapper-start-page,
-    .wrapper-header-desktop  {
+    .wrapper-header-desktop,
+    .wrapper-about  {
         width: 900px;
         @include margin-auto;
     }
